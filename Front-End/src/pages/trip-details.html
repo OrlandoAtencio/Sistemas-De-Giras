@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles de la Gira</title>
+</head>
+<body>
+
+    <!-- HEADER: Navegación mínima -->
+    <header>
+        <button onclick="history.back()">Volver</button>
+        <h1>Detalles de la Gira</h1>
+        <p>Información completa de la gira</p>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- Contenedor principal del detalle de gira -->
+        <section>
+
+            <!-- Imagen principal del viaje -->
+            <figure>
+                <!-- Se reemplazará dinámicamente -->
+                <img src="assets/img/gira.png" alt="Imagen de la gira" width="100%">
+            </figure>
+
+            <!-- Encabezado de texto -->
+            <h2>Nombre de la Gira</h2>
+            <p>Información detallada de la gira</p>
+
+            <!-- INFORMACIÓN PRINCIPAL -->
+            <div>
+
+                <!-- Fecha -->
+                <section>
+                    <h3>Fecha</h3>
+                    <p><!-- Dinámico: formato fecha --></p>
+                </section>
+
+                <!-- Lugar -->
+                <section>
+                    <h3>Lugar</h3>
+                    <p><!-- Dinámico: lugar --></p>
+                </section>
+
+                <!-- Cupos -->
+                <section>
+                    <h3>Cupos Disponibles</h3>
+                    <p><!-- Dinámico ejemplo: 5 de 25 --></p>
+                </section>
+
+                <!-- Monto -->
+                <section>
+                    <h3>Monto</h3>
+                    <p>B/ .00</p>
+                </section>
+
+            </div>
+
+            <!-- DESCRIPCIÓN -->
+            <article>
+                <h3>Descripción</h3>
+                <p>Aquí va una descripción detallada sobre la gira seleccionada. Texto informativo.</p>
+            </article>
+
+            <!-- BOTÓN DE REGISTRO -->
+            <button>
+                Registrarse en esta Gira
+            </button>
+
+        </section>
+
+        <!-- MODAL: Selección método de pago (estructura sin interacción JS) -->
+        <dialog>
+            <h3>Registro de Gira</h3>
+            <p>Seleccione su método de pago preferido</p>
+
+            <p>Monto a pagar: <strong>B/. 00.00</strong></p>
+
+            <form>
+
+                <label>
+                    <input type="radio" name="pago" value="efectivo">
+                    Efectivo
+                </label><br>
+
+                <label>
+                    <input type="radio" name="pago" value="tarjeta">
+                    Tarjeta Crédito/Débito
+                </label><br>
+
+                <label>
+                    <input type="radio" name="pago" value="transferencia">
+                    Transferencia Bancaria
+                </label><br>
+
+                <label>
+                    <input type="radio" name="pago" value="yappy">
+                    Yappy
+                </label><br>
+
+                <button type="button">Cancelar</button>
+                <button type="submit">Continuar</button>
+            </form>
+        </dialog>
+
+        <!-- MODAL CONFIRMACIÓN RESUMEN -->
+        <dialog>
+            <h3>Confirmar Registro</h3>
+
+            <p>Gira: <span><!-- Nombre dinámico --></span></p>
+            <p>Estudiante: <span><!-- Nombre dinámico --></span></p>
+            <p>Monto: <span>B/.00.00</span></p>
+            <p>Método de pago: <span><!-- Pago dinámico --></span></p>
+
+            <p>
+                Al confirmar, su registro será enviado al coordinador para revisión.
+            </p>
+
+            <button>No, cancelar</button>
+            <button>Sí, confirmar</button>
+        </dialog>
+
+    </main>
+
+</body>
+</html>
