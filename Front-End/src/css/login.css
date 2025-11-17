@@ -1,0 +1,172 @@
+/* ----------------------- */
+/* PALETA INSTITUCIONAL UTP */
+/* ----------------------- */
+:root {
+    --utp-dark-blue: #003A70;
+    --utp-blue: #0072CE;
+    --utp-light-gray: #F4F6F8;
+    --utp-gray: #D9DCE1;
+    --white: #ffffff;
+    --black: #111111;
+}
+
+/* ----------------------- */
+/* ESTILOS BASE */
+/* ----------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--utp-dark-blue), var(--utp-blue));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-center {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* ----------------------- */
+/* TARJETA PRINCIPAL */
+/* ----------------------- */
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card-header {
+    margin-bottom: 1rem;
+}
+
+.card-header h1 {
+    font-size: 1.8rem;
+    color: var(--utp-dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* ----------------------- */
+/* FORMULARIOS */
+/* ----------------------- */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--utp-dark-blue);
+}
+
+.form-control input {
+    padding: 12px;
+    border: 1px solid var(--utp-gray);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: var(--utp-blue);
+    box-shadow: 0 0 5px rgba(0, 114, 206, 0.4);
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
+
+/* ----------------------- */
+/* BOTONES */
+/* ----------------------- */
+.btn-primary {
+    width: 100%;
+    background: var(--utp-blue);
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    color: var(--white);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: var(--utp-dark-blue);
+}
+
+/* ----------------------- */
+/* LINKS Y FOOTER */
+/* ----------------------- */
+.link {
+    color: var(--utp-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-small {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* ----------------------- */
+/* INFO BOX */
+/* ----------------------- */
+.info-box {
+    background: var(--utp-light-gray);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+/* ----------------------- */
+/* RESPONSIVIDAD */
+/* ----------------------- */
+@media (max-width: 480px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card-header h1 {
+        font-size: 1.5rem;
+    }
+}
