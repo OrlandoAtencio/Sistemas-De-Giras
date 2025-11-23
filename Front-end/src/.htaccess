@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /giras_tecnicas/
+
+# Configuración de PHP
+php_value upload_max_filesize 5M
+php_value post_max_size 6M
+php_value max_execution_time 300
