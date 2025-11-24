@@ -38,21 +38,13 @@ body {
   align-items: center;
 }
 
-.header-info h1 {
-  margin: 0;
-  font-size: 26px;
-  font-weight: bold;
-}
-
-.header-info p {
-  margin-top: 4px;
-  opacity: 0.8;
-}
-
-.header-nav a {
-  margin-right: 20px;
-  color: white;
-  text-decoration: none;
+.report-btn {
+  background: var(--utp-yellow);
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
   font-weight: bold;
 }
 
@@ -73,7 +65,6 @@ body {
   margin: 30px auto;
 }
 
-/* =======  GIRAS SECTION ======== */
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -115,27 +106,28 @@ body {
   cursor: pointer;
 }
 
-.gira-card h3 {
-  margin: 0;
-  font-size: 20px;
-  color: var(--utp-blue);
+.edit-cupos-btn {
+  background: var(--utp-light-blue);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.fecha {
-  margin: 5px 0 10px;
-  color: gray;
-}
-
-.gira-stats p {
-  margin: 3px 0;
+.estado-gira {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .green { color: var(--utp-green); }
-.blue { color: var(--utp-light-blue); }
 .yellow { color: var(--utp-yellow); }
+.blue { color: var(--utp-light-blue); }
 .red { color: var(--utp-red); }
 
-/* =======  TABLE STUDENTS ======== */
+/* ========== TABLAS ========== */
 .students-table {
   width: 100%;
   border-collapse: collapse;
@@ -162,7 +154,6 @@ body {
   border-radius: 5px;
   color: white;
 }
-
 .badge.green { background: var(--utp-green); }
 .badge.red { background: var(--utp-red); }
 
@@ -186,21 +177,4 @@ body {
 .reject {
   background: var(--utp-red);
   color: white;
-}
-
-/* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header-nav {
-    margin-top: 10px;
-  }
-
-  .students-table th,
-  .students-table td {
-    font-size: 14px;
-  }
 }

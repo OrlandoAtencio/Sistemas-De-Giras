@@ -1,115 +1,131 @@
-/* ------------------------------
-   Estilos generales
---------------------------------*/
+/* ==========================
+   ESTILOS GENERALES
+========================== */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(135deg, #002855, #005BBB);
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f5f5;
     margin: 0;
     padding: 0;
     color: #333;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-/* ------------------------------
-   Tarjeta del formulario
---------------------------------*/
-form {
-    background: #ffffff;
-    padding: 2rem 2.5rem;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 480px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-/* ------------------------------
-   Encabezado
---------------------------------*/
+/* ==========================
+   ENCABEZADO
+========================== */
 header {
     text-align: center;
+    padding: 25px 15px;
+    background: #003366; /* Azul UTP */
     color: white;
-    padding: 2rem 1rem;
 }
 
 header h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 700;
 }
 
-/* ------------------------------
-   Inputs y etiquetas
---------------------------------*/
+header p {
+    margin: 5px 0;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* ==========================
+   FORMULARIO
+========================== */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 480px;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Secciones del formulario */
+form section {
+    margin-bottom: 18px;
+}
+
 label {
+    font-size: 15px;
     font-weight: 600;
-    color: #002855;
+    color: #003366;
 }
 
 input,
 select {
     width: 100%;
-    padding: 0.8rem;
-    border: 2px solid #cbd5e1;
+    margin-top: 6px;
+    padding: 12px;
+    border: 1.8px solid #c4c4c4;
     border-radius: 8px;
-    font-size: 1rem;
-    transition: border 0.3s;
+    font-size: 15px;
+    transition: 0.2s;
 }
 
+/* Efecto al escribir */
 input:focus,
 select:focus {
-    border-color: #005BBB;
     outline: none;
+    border-color: #0073e6; /* Azul UTP más claro */
+    box-shadow: 0 0 0 3px rgba(0, 115, 230, 0.2);
 }
 
-/* ------------------------------
-   Botón
---------------------------------*/
+/* ==========================
+   BOTÓN PRINCIPAL
+========================== */
 button {
-    background-color: #005BBB;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background: #0073e6; /* Azul UTP moderno */
     color: white;
     border: none;
-    padding: 0.9rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
+    border-radius: 10px;
     font-weight: 600;
-    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
 }
 
 button:hover {
-    background-color: #003f82;
+    background: #005bb5;
 }
 
-/* ------------------------------
-   Footer
---------------------------------*/
+/* ==========================
+   FOOTER
+========================== */
 footer {
-    margin-top: 1.5rem;
     text-align: center;
+    margin-top: 20px;
 }
 
 footer a {
-    color: #ffffff;
+    text-decoration: none;
+    color: #003366;
     font-weight: 600;
+}
+
+footer a:hover {
     text-decoration: underline;
 }
 
-/* ------------------------------
-   Responsividad
---------------------------------*/
+/* ==========================
+   RESPONSIVE
+========================== */
 @media (max-width: 480px) {
     form {
-        padding: 1.5rem;
+        padding: 20px;
     }
-
-    header h2 {
-        font-size: 1.6rem;
+    button {
+        font-size: 15px;
     }
 }
